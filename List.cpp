@@ -140,10 +140,10 @@ void List::remove(int k)
 		remove(1);
 		
 		/*{
-			/*
+			
 			Node* dltPtr=frontPtr;
 			frontPtr=frontPtr->link;
 			delete dltPtr;
 			num_elements--;
-			};
-		};*/
+			};*/
+		};
