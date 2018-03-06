@@ -93,3 +93,57 @@ void List::remove(int k)
 	
 	//Implementations of missing operations
 	
+	List::List(){
+		
+		};
+		
+	int List::getElements(){
+	Node* tmp=frontPtr;
+		for (int i=1;i<=num_elements;i++){
+			if (i==1){
+			cout<<tmp->data<<" "; 
+		}
+			else {
+			tmp=tmp->link;	
+			cout<< tmp->data<<" ";
+				}
+		};
+			
+		return 0;
+		};
+		
+	// get element at specific node
+	
+	int List::getElement(int pos){
+	//a temporary pointer pointing at the front of the list
+	Node* tmp=frontPtr;
+		for (int i=1;i<=num_elements;i++){
+			// if the position requested is 1 then returns the data that front pointer points to
+			if (pos==i){
+			return tmp->data;
+		}	
+		// if the number requested is not one then gors to front pointers link 
+		
+			else {
+			tmp=tmp->link;	
+			
+				}
+		};
+			
+		return 0;
+		};
+		
+	void List::clear(){
+		//uses the remove method from above
+		//while the list is not empty remove the first element
+		while (num_elements != 0)
+		remove(1);
+		
+		/*{
+			/*
+			Node* dltPtr=frontPtr;
+			frontPtr=frontPtr->link;
+			delete dltPtr;
+			num_elements--;
+			};
+		};*/

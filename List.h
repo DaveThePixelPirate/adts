@@ -22,7 +22,10 @@ class List //begin List definition
      
      /** MISSING OPERATIONS */
      //... fill in ....
-
+	List();//constructor
+	int getElements();
+	int getElement(int pos);
+	void clear();
 };//end List definition
 
 #endif
